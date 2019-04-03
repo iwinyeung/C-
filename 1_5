@@ -1,0 +1,10 @@
+Objective: Write a program that displays your name inside a box on the terminal screen.
+
+#include <iostream>
+int main()
+{
+	std::cout << "+-----+\n";
+	std::cout << "|Iwin |\n";
+	std::cout << "+-----+\n";
+	return 0;
+}
