@@ -1,6 +1,7 @@
 Objective: Write a program that displays your name inside a box on the terminal screen.
 
 #include <iostream>
+using namespace std;
 int main()
 {
 	std::cout << "+-----+\n";
