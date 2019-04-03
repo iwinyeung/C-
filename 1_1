@@ -1,0 +1,15 @@
+Objective: Write a program that prints an introduction, asks for user input, and returns the message "I am sorry, I cannot do that."
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	std::cout << "Hello, my name is Hal!\n";
+	std::cout << "What would you like to do today?\n";
+	string user_input;
+	getline(cin, user_input);
+	std::cout << "I am sorry, I cannot do that.\n";
+	return 0;
+}
