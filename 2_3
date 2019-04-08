@@ -1,0 +1,25 @@
+Objective: Write a program that prompts the user for two integers and then prints: sum, difference, product, average, distance, maximum, and minimum
+
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+cout<<"Enter the first integer:" ;
+int y; 
+cin >> y;
+
+
+cout << "Enter the second integer:" ;
+int z;
+cin >> z;
+
+cout <<"their sum is:"<< y + z<<"\n";
+cout << "their difference is:" << y - z<<"\n";
+cout << "their product is:" << abs(y - z) << "\n";
+cout << "their average is:" << (y+z)/2 << "\n";
+cout << "their distance is:" << abs(y - z) << "\n";
+cout << "their maximum is:" << max(y,z) << "\n";
+cout << "their minimum is:" << min(y,z) << "\n";
