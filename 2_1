@@ -1,0 +1,22 @@
+Objective: Write a program that prints:
+1
+10
+100
+1000
+.......
+as integers and as floating numbers. Explain the results.
+
+// Using the for loop, we can accomplish the results that prints the following program.  
+
+#include<iostream>
+
+using namespace std;
+
+intmain(){
+
+  for(int i =0; i<10;i++)
+  {
+  cout<<pow(10,i)<<endl;
+  } 
+
+}
