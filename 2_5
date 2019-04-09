@@ -1,0 +1,26 @@
+Objective: Write a program that calculates the area and circumference by prompting user for a radius
+
+
+
+#include<iostream>
+#include<cmath> // allows you to use power function
+
+
+using namespace std;
+
+int main(){
+
+  double radius;
+  cout<<"radius please:";
+  cin>>radius; ??user gave a value
+  
+  //area of a circle 
+  double pi = 3.14152; // double allow for decimals and int allows for integers only.
+  double area = pi*radius*radius;
+  double cir = 2*pi*radius;
+  
+  cout<<"area is"<<area<<'\n';
+  cout<<"circ is"<<cir<<'\n';
+
+
+}
