@@ -2,41 +2,41 @@
 // quarters, dimes, nickels, and pennies.
 
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
-int main(){
-  double due;
-  double received;
-  cout <<"Amount due: $";
-  cin>> due;
-  cout<<"Amount received:$";
-  cin>> received;
-  
-  double change = received - due;
-  //example change = 4.32
-  //dollars=4, quarters=1, dimes=0, nickels=1, pennies=2;
-  
-  int dollar = change;//dollar =4
-  change = change-dollar; //change = 0.32;
-  int coins = change * 100; //coins = 32
-  int q = coins / 25;
-  coins = coins-25*q; // coins = 7
-  int d = coins / 10; // d = 0
-  coins = coins-10*d;
-  int n = coins/5; //n = 1
-  coins = coins-5*n;
-  int p = coins/1; //p=2
-  coins = coins-1*p;
-  
-  cout<<"dollar"<<dollar<<endl;
-  cout<<"quarters"<<q<<endl;
-  cout<<"dimes"<<d<<endl;
-  cout<<"nickels"<<n<<endl;
-  cout<<"pennies"<<p<<endl;
-  
-return 0;
-
+int main() {
+    double due;
+    double received;
+    cout << "Amount due: $";
+    cin >> due;
+    cout << "Amount received:$";
+    cin >> received;
+    
+    double change = received - due;
+    
+    int dollar = change;//dollar =4
+    change = change - dollar; //change = 0.32;
+    int coins = round(change * 100); //coins = 32
+    cout << coins << endl;
+    int q = coins / 25;
+    coins = coins - 25 * q; // coins = 7
+    int d = coins / 10; // d = 0
+    coins = coins - 10 * d;
+    int n = coins / 5; //n = 1
+    coins = coins - (5 * n);
+    int p = coins;
+    
+    
+    cout << "dollar: " << dollar << endl;
+    cout << "quarters: " << q << endl;
+    cout << "dimes: " << d << endl;
+    cout << "nickels: " << n << endl;
+    cout << "pennies: " << p << endl;
+    
+    return 0;
+    
 }
 
 
