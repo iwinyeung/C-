@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+int main() {
+
+	int first_time; //can also use  int first_time,second_time;
+	int second_time;
+
+	cout << "first time 0000:";
+	cin >> first_time;
+	int first_time_total_minutes = first_time / 100 * 60 + first_time % 100;
+
+	cout << "second time 0000: ";
+	cin >> second_time;
+	int second_time_total_minutes = second_time / 100 * 60 + second_time % 100;
+
+	int diff = second_time_total_minutes - first_time_total_minutes;
+	int diff_hours = diff / 60;
+	int diff_minutes = diff % 60;
+
+	cout << diff_hours << "hours " << diff_minutes << "minutes " << endl;
+	//first_time 1230; //12 hours 30 minutes = 12*60 + 30 = 750 minutes
+	//second_time 1525; // 15 hours 25 minutes = 15*60 + 25 = 925 minutes
+	//diff = second_time - first_time = 175 minutes
+
+	//175 minutes = 175/60 , 175% 60 = 2 hours 55 minutes
+
+	//total minutes --> hours minutes
+	// 150 minutes = 150/60 + 150%6 = 
+	// 6 / 3 = 2
+	// 6 % 3 = 0
+
+	return 0;
+}
