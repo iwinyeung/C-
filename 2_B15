@@ -16,7 +16,8 @@ int main() {
 	cin >> second_time;
 	int second_time_total_minutes = second_time / 100 * 60 + second_time % 100;
 
-	int diff = second_time_total_minutes - first_time_total_minutes;
+	int diff = second_time_total_minutes - first_time_total_minutes; // negative
+	diff = (diff + 1440) % 1440;
 	int diff_hours = diff / 60;
 	int diff_minutes = diff % 60;
 
