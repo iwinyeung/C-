@@ -23,3 +23,7 @@ cout << "their average is:" << (y+z)/2 << "\n";
 cout << "their distance is:" << abs(y - z) << "\n";
 cout << "their maximum is:" << max(y,z) << "\n";
 cout << "their minimum is:" << min(y,z) << "\n";
+
+return 0;
+
+}
