@@ -1,0 +1,81 @@
+Example
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+
+  string a = "hello world! \n";
+  cout<< a.substr(0,4) <<endl; \\starts from 0 and 4 gives you the number of letters --> hell
+  cout<< a.substr(1,2) <<endl; \\ starts from 1 and 2 gives you the number of letters --> el
+  cout<< a.substr(7,444) <<endl; \\ --> orld, includes the \n spacing
+  
+  cout<< a.substr(7) <<endl; \\  -->world, does not include the \n spacing
+  
+  
+  
+  ---------------------------------------------------------------------------------------------------------------------
+P.2.13
+#include<iostream>
+#include<string>
+//#include"string" ; use for custom libraries
+using namespace std;
+
+int main(){
+    string a;
+    cout<< "write>=1000:";
+    cin>>a;
+    
+    int length_a = a.length();
+    
+    cout<<a.substr(0,length_a-3)<<","<<a.substr(length_a-3,3)<<endl;
+    
+    
+    
+    
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------
+P.2.12
+#include<iostream>
+#include<string>
+//#include"string" ; use for custom libraries
+using namespace std;
+
+int main(){
+    string b;
+    cout<< "write>=1000:";
+    cin>>b;
+    
+    int length_b = b.length();
+    
+    cout<<b.substr(0,length_b-3-1)<<b.substr(length_b-3,3)<<endl;
+    
+    
+    
+    
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------------
+P.2.15
+
+#include<iostream>
+#include<string>
+//#include"string" ; use for custom libraries
+using namespace std;
+
+int main(){
+  
+    string b;
+    cout<< "write>=1000:";
+    cin>>b;
+    
+    int length_b = b.length();
+    
+    cout<<b.substr(0,1)<<" "<<b.substr(1,1)<<""<<b.substr(2,1)<<endl;
+    
+    
+    
+    return 0;
+}
