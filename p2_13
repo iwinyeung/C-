@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+//#include"string" ; use for custom libraries
+using namespace std;
+
+int main(){
+    string b;
+    cout<< "write>=1000:";
+    cin>>b;
+    
+    int length_b = b.length();
+    
+    cout<<b.substr(0,length_b-3-1)<<b.substr(length_b-3,3)<<endl;
+    
+    
+    
+    
+    return 0;
+}
