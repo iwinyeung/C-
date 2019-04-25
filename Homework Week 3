@@ -84,4 +84,62 @@ while
 Try: 3.21
 
 
+Problem 4:
+#include <isotream? 
 
+using namespace std;
+
+int main(){
+cout<<"numbers:";
+int x;
+char c = ''
+double sum =0;
+while(c! = '\n'){
+cin>>x;
+c= cin.get();
+cout<<x<<endl;
+cout<<"sum="<<sum<<endl;
+
+}
+
+
+
+}
+________________________________________
+Problem 5:
+int num; 
+cout<<"numer:?";
+cin>>num;
+
+string s = "";
+
+while(num!=0){
+int quotient = num/2;
+int remainder = num%2;
+
+if(remainder ==0){s = "0"+s}
+else{"1"  +s;}
+
+num = quotient;
+
+
+}
+
+cout<<"The answer is"<<s<<endl;
+
+Problem 5 part b:
+#include<iostream>
+#include<string>
+using namespace std;
+main(){
+int num = 151;
+while (num != 0){
+int quotient = num/2;
+int remainder = num%2;
+if(remainder ==0){
+
+}
+
+}
+
+}
