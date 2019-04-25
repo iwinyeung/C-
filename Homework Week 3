@@ -97,6 +97,7 @@ double sum =0;
 while(c! = '\n'){
 cin>>x;
 c= cin.get();
+sum +=x;
 cout<<x<<endl;
 cout<<"sum="<<sum<<endl;
 
